@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cool Car Videos</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🔥 Exotic Car Showroom 🔥</title>
   <style>
     body {
       margin: 0;
       padding: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url('https://images.unsplash.com/photo-1571607385603-9ec9cdb015a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background: url('https://images.unsplash.com/photo-1606214174583-abe9cdb0f5aa?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
       background-size: cover;
       color: white;
     }
 
     .overlay {
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(0, 0, 0, 0.8);
       position: absolute;
       top: 0;
       left: 0;
@@ -27,48 +27,165 @@
     header {
       text-align: center;
       padding: 2rem;
-      font-size: 2.5rem;
+      font-size: 3rem;
       font-weight: bold;
-      background: rgba(0, 0, 0, 0.7);
+      background: rgba(0, 0, 0, 0.75);
+      color: #ffcc00;
+      text-shadow: 0 0 10px #ffcc00;
+    }
+
+    .sub-header {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-top: -1rem;
+      color: #ccc;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 2rem;
+      color: #ffcc00;
+      text-shadow: 0 0 5px #ffcc00;
+    }
+
+    .video-section {
+      margin-bottom: 4rem;
     }
 
     .video-container {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      padding: 2rem;
+      padding: 1rem;
     }
 
     .video-box {
+      position: relative;
       width: 100%;
-      max-width: 560px;
+      max-width: 320px;
       margin: 1rem;
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 25px rgba(255, 204, 0, 0.5);
+      transition: transform 0.3s;
+      background: black;
     }
 
-    iframe {
+    .video-box:hover {
+      transform: scale(1.05);
+    }
+
+    .video-box img {
       width: 100%;
-      height: 315px;
-      border: none;
+      display: block;
+    }
+
+    .video-caption {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.7);
+      width: 100%;
+      padding: 0.5rem;
+      text-align: center;
+      font-weight: bold;
+      color: #ffcc00;
+      font-size: 1rem;
+    }
+
+    audio {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      z-index: 999;
     }
   </style>
 </head>
 <body>
   <div class="overlay"></div>
+  <header>🔥 Exotic Car Showroom 🔥</header>
+  <div class="sub-header">Curated by Chris Kuklinski • Music: Royalty-Free Background Drive</div>
 
-  <header>🔥 Cool Car Videos by Chris Kuklinski 🔥</header>
+  <!-- Background music -->
+  <audio controls autoplay loop>
+    <source src="https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Scott_Holmes/Hot_Latte/Scott_Holmes_-_Hot_Latte.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
 
-  <div class="video-container">
-    <div class="video-box">
-      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+  <!-- Sports Cars Section -->
+  <div class="video-section">
+    <h2>🏎️ Sports Cars</h2>
+    <div class="video-container">
+      <div class="video-box">
+        <a href="https://www.youtube.com/watch?v=Zi0t0z09O3k" target="_blank">
+          <img src="https://img.youtube.com/vi/Zi0t0z09O3k/hqdefault.jpg" alt="Thumbnail">
+          <div class="video-caption">Turbocharged Insanity</div>
+        </a>
+      </div>
+      <div class="video-box">
+        <a href="https://www.youtube.com/watch?v=k5LrWQ9f5rw" target="_blank">
+          <img src="https://img.youtube.com/vi/k5LrWQ9f5rw/hqdefault.jpg" alt="Thumbnail">
+          <div class="video-caption">V12 Exhaust Symphony</div>
+        </a>
+      </div>
     </div>
-    <div class="video-box">
-      <iframe src="https://www.youtube.com/shorts/5ZSgO9ws__U" allowfullscreen></iframe>
+  </div>
+
+  <!-- Trucks Section -->
+  <div class="video-section">
+    <h2>🚛 Trucks</h2>
+    <div class="video-container">
+      <div class="video-box">
+        <a href="https://www.youtube.com/watch?v=pSLqxbuJ7iY" target="_blank">
+          <img src="https://img.youtube.com/vi/pSLqxbuJ7iY/hqdefault.jpg" alt="Thumbnail">
+          <div class="video-caption">Lifted & Loaded</div>
+        </a>
+      </div>
+      <div class="video-box">
+        <a href="https://www.youtube.com/watch?v=YwKj3dC_vg8" target="_blank">
+          <img src="https://img.youtube.com/vi/YwKj3dC_vg8/hqdefault.jpg" alt="Thumbnail">
+          <div class="video-caption">Diesel Torque Madness</div>
+        </a>
+      </div>
     </div>
-    <!-- Add more videos below -->
-    <!-- <div class="video-box">
-      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
-    </div> -->
+  </div>
+
+  <!-- Races Section -->
+  <div class="video-section">
+    <h2>🏁 Races</h2>
+    <div class="video-container">
+      <div class="video-box">
+        <a href="https://www.youtube.com/watch?v=0J6Pjp1PjdY" target="_blank">
+          <img src="https://img.youtube.com/vi/0J6Pjp1PjdY/hqdefault.jpg" alt="Thumbnail">
+          <div class="video-caption">Street Kings Battle</div>
+        </a>
+      </div>
+      <div class="video-box">
+        <a href="https://www.youtube.com/watch?v=QN-gDgchYng" target="_blank">
+          <img src="https://img.youtube.com/vi/QN-gDgchYng/hqdefault.jpg" alt="Thumbnail">
+          <div class="video-caption">Track Day Domination</div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reviews Section -->
+  <div class="video-section">
+    <h2>🧐 Reviews</h2>
+    <div class="video-container">
+      <div class="video-box">
+        <a href="https://www.youtube.com/watch?v=VEJ4VdzN6i4" target="_blank">
+          <img src="https://img.youtube.com/vi/VEJ4VdzN6i4/hqdefault.jpg" alt="Thumbnail">
+          <div class="video-caption">Exotic vs Daily Driver</div>
+        </a>
+      </div>
+      <div class="video-box">
+        <a href="https://www.youtube.com/watch?v=e9z_RzTzQtw" target="_blank">
+          <img src="https://img.youtube.com/vi/e9z_RzTzQtw/hqdefault.jpg" alt="Thumbnail">
+          <div class="video-caption">Hypercar Deep Dive</div>
+        </a>
+      </div>
+    </div>
   </div>
 </body>
 </html>
